@@ -1,0 +1,246 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #141414;
+            color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .head {
+            width: min(100% - 40px, 1100px);
+            margin: 0 auto;
+            padding: 32px 0 48px;
+        }
+
+        .cont1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 32px;
+            min-height: 300px;
+            padding: 36px;
+            background: linear-gradient(135deg, #242424, #1a1a1a);
+            border-radius: 12px;
+        }
+
+        .box1 {
+            max-width: 560px;
+            color: #d0d0d0;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .box2 {
+            display: flex;
+            flex: 0 0 280px;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px 15px;
+            color: #fff;
+            background: #303030;
+            border: 1px solid #555;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        input:focus {
+            border-color: #e50914;
+            outline: 2px solid #e50914;
+        }
+
+        button {
+            padding: 13px 18px;
+            color: #fff;
+            background: #e50914;
+            border: 0;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #b80710;
+        }
+
+        .cont2,
+        .cont3,
+        .cont4 {
+            margin-top: 40px;
+        }
+
+        h1 {
+            margin: 0 0 20px;
+            font-size: 28px;
+        }
+
+        .trending-boxes,
+        .more-boxes,
+        .question {
+            display: flex;
+            gap: 18px;
+        }
+
+        .box3,
+        .box4,
+        .box5,
+        .box6,
+        .box7,
+        .box8,
+        .box9,
+        .box10,
+        .box11,
+        .box12 {
+            flex: 1;
+            min-width: 0;
+            min-height: 150px;
+            padding: 20px;
+            background: #252525;
+            border-radius: 10px;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .box3:hover,
+        .box4:hover,
+        .box5:hover,
+        .box6:hover,
+        .box7:hover,
+        .box8:hover,
+        .box9:hover,
+        .box10:hover,
+        .box11:hover,
+        .box12:hover {
+            background: #333;
+            transform: translateY(-3px);
+        }
+
+        .box3,
+        .box4,
+        .box5,
+        .box6 {
+            min-height: 190px;
+            display: flex;
+            align-items: flex-end;
+            background: linear-gradient(145deg, #3a3a3a, #202020);
+        }
+
+        .box3 h2,
+        .box4 h2,
+        .box5 h2,
+        .box6 h2 {
+            margin: 0;
+        }
+
+        .box7 p,
+        .box8 p,
+        .box9 p {
+            color: #c4c4c4;
+            line-height: 1.5;
+        }
+
+        .cont5 {
+            display: flex;
+            gap: 12px;
+            max-width: 520px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
+            .cont1,
+            .trending-boxes,
+            .more-boxes,
+            .question {
+                flex-direction: column;
+            }
+
+            .cont1 {
+                align-items: stretch;
+                padding: 24px;
+            }
+
+            .box2 {
+                flex-basis: auto;
+            }
+
+            .cont5 {
+                flex-direction: column;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="head">
+        <div class="cont1">
+            <div class="box1" > Netflix is a popular online streaming platform where you can watch movies, web series, TV shows, documentaries, and anime. It offers entertainment in different languages and genres, including comedy, action, romance, and thriller. You should visit Netflix to explore exciting content, discover new shows, and enjoy high-quality entertainment anytime, anywhere, with an internet connection.</div>
+            <div class="box2">
+                <input type="text" placeholder="Enter text">
+                <input type="text" placeholder="Enter text">
+                <button type="button">Submit</button>
+            </div>
+        </div>
+        <div class="cont2">
+            <h1>Trending</h1>
+            <div class="trending-boxes">
+                <div class="box3"> 
+                    <h2>The Old Gaurd 2</h2>
+                </div>
+                <div class="box4">
+                    <h2>The Great Flood</h2>
+                </div>
+                <div class="box5">
+                    <h2>Extraction 2</h2>
+                </div>
+                <div class="box6">
+                    <h2>The Batman</h2>
+                </div>
+            </div>
+        </div>
+        <div class="cont3">
+            <h1>More </h1>
+            <div class="more-boxes">
+            <div class="box7">
+                <h2>Action</h2>
+                <p>exciting fights, thrilling stunts, and powerful adventures.</p>
+            </div>
+            <div class="box8">
+                <h2>Comedy</h2>
+                <p>funny jokes, hilarious situations, and light-hearted entertainment.</p>
+            </div>
+            <div class="box9">
+                <h2>Romance</h2>
+                <p>heartwarming stories, passionate relationships, and emotional connections.</p>
+            </div>
+        </div>
+        </div>
+        <div class="cont4">
+            <h1>Frequently Asked Questions</h1>
+            <div class="question">
+            <div class="box10">
+                <h2>What are the most popular shows on Netflix?</h2>
+            </div>
+            <div class="box11">
+                <h2>How can I found movies by genere on Netflix?</h2>
+            </div>
+            <div class="box12">
+                <h2>Where can I find the latest releases on Netflix?</h2>
+            </div>
+            </div>
+        </div>
+        <div class="cont5">
+            <input type="text" placeholder="Enter text">
+            <button type="button">Next</button>
+        </div>
+        </div>
+    </body>
+</html>
